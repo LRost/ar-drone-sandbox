@@ -25,6 +25,17 @@ xbox.on('y:press', function (key) {
   client.ftrim();
 });
 
+// Camera settings
+xbox.on('dup:press', function (key) {
+  console.log('dup:press - front camera');
+  client.config('video:video_channel', 0);
+});
+
+xbox.on('ddown:press', function (key) {
+  console.log('ddown:press - bottom camera');
+  client.config('video:video_channel', 3);
+});
+
 // Takeoff and land
 xbox.on('a:press', function (key) {
   console.log('a:press - takeoff');
