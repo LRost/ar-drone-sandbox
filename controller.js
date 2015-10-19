@@ -1,3 +1,5 @@
+// Source: https://raw.githubusercontent.com/andrew/node-xbox-controller/master/example.js
+
 var XboxController = require('xbox-controller');
 var xbox = new XboxController();
 
